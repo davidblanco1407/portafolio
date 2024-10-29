@@ -1,0 +1,157 @@
+/* Variables de colores */
+:root {
+    --primary-color: #1a1a1a;
+    --secondary-color: #f4f4f4;
+    --accent-color: #ff5722;
+    --text-color: #333;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+/* Header */
+.header {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem;
+}
+
+.header__image-content {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.header__image {
+    max-width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.header__title {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.header__description {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+/* Navbar */
+.nav {
+    margin-top: 1rem;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.nav__link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+    color: white;
+}
+
+/* Main Content */
+.main-content {
+    padding: 2rem;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.section__title {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+.section__description {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+/* Projects */
+.proyecto {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto__title {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.proyecto__link {
+    display: inline-block;
+    color: var(--accent-color);
+    text-decoration: none;
+    margin-top: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.proyecto__link:hover {
+    color: var(--primary-color);
+}
+
+/* Skills */
+.habilidades__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.habilidades__item {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* Contact */
+.contacto__link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contacto__link:hover {
+    color: var(--primary-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
